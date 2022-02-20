@@ -1,0 +1,168 @@
+#body{
+    width: 100%;
+    background-image: url("tokenspace_0001.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100rem 100rem ;
+    background-attachment: fixed;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+#title-menu{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin-top: 0px;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+.title-item{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: greenyellow;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    color: greenyellow;
+    height: 40px;
+    font-size: 16px;
+    font: bold;
+    text-align: center;
+}/* เขียนเองโดยสปา spgt sitthipong ซื้องาน NFT ด้วย
+ idea-pool ใน opensea ขายของซะเลย */
+
+.title-item:hover{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(219, 255, 164);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    color: rgb(219, 255, 164);
+    height: 40px;
+    font-size: medium;
+    font: bold;
+    text-align: center;
+    /* animation expand left and right */
+    animation-name: width-animation;
+    animation-duration: 0.5s;
+    transform: scaleX(1.2)
+}
+
+.title-item:active{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(0, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    color: rgb(0, 255, 0);
+    height: 40px;
+    font-size: medium;
+    font: bold;
+    text-align: center;
+    /* animation down size */
+    animation-name: down-size;
+    animation-duration: 50ms;
+    transform: scale(0.8);
+}
+
+@keyframes width-animation {
+    0%{
+        transform: scaleX(1);
+    }
+    100%{
+        transform: scaleX(1.2);
+    }
+    
+}
+
+@keyframes down-size {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.8);
+    }
+}
+
+.all-top{
+    height: 100px;
+}
+
+
+.grid-center{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: auto 61.805% auto;
+    column-gap: 0px;
+    row-gap: 50px;/* ระยะห่างระหว่างกล่องข้อมูล */
+    text-align: center;
+}
+.grid-center-item{
+    border: solid greenyellow ;
+    border-width: 0px 2px 2px 0px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    font-size: 20px;
+    color: rgb(192, 192, 192);
+    font-weight: bolder;
+    text-align: justify;
+}
+.grid-center-item:hover{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    font-size: 20px;
+
+    /* animation */
+    animation-name: center-up;
+    animation-duration: 2s;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
+}
+.grid-center-item:active{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    font-size: 20px;
+
+    /* animation */
+    animation-name: center-up;
+    animation-duration: 2s;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
+}
+/* animation ที่เอาเม้ามาชี้หรือกดที่ไอเทมข้อมูลหลัก ขนาดจะใหญ่ขึ้น */
+@keyframes center-up {
+    0%{
+        transform: scale(1);
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    100%{
+        transform: scale(1.1);
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+/* new version */
+
