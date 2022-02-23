@@ -11,17 +11,42 @@
 }
 
 #title-menu{
-    display: flex;
+    display: flex;/* flex is default */
     background-color: rgba(0, 0, 0, 0.8);
     justify-content: space-around;
     box-sizing: border-box;
     margin-top: 0px;
     padding: 10px;
-    position: fixed;
+    position: fixed;/* fixed is default */
     width: 100%;
     z-index: 1;
     
+    overflow: scroll;
+    overflow-y:hidden;
 }
+
+/* scroll bar for title */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 3px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    border: 1px solid greenyellow;
+    border-radius: 0px;
+    background: black;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background: greenyellow;  
+    border-radius: 0px;
+    }
+    
+
+
+
+
+/* สิ่งที่จะอยู่ในนั้น */
 
 .title-item{
     border-style: solid;
@@ -31,9 +56,10 @@
     padding: 10px;
     color: greenyellow;
     height: 40px;
-    font-size: 16px;
+    font-size: auto;
     font: bold;
     text-align: center;
+    width: auto;
 }/* เขียนเองโดยสปา spgt sitthipong ซื้องาน NFT ด้วย
  idea-pool ใน opensea ขายของซะเลย */
 
