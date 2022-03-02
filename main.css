@@ -1,26 +1,28 @@
-#body{
+#body {
     width: 100%;
     background-image: url("tokenspace_0001.png");
     background-repeat: no-repeat;
-    background-position: center; 
-    background-size: 100rem 100rem ;
+    background-position: center;
+    background-size: 100rem 100rem;
     background-attachment: fixed;
     padding: 0px;
     margin: 0px;
     text-align: center;
 }
 
-#title-menu{
-    display: flex;/* flex is default */
+#title-menu {
+    display: flex;
+    /* flex is default */
     background-color: rgba(0, 0, 0, 0.8);
     justify-content: space-around;
     box-sizing: border-box;
     margin-top: 0px;
     padding: 10px;
-    position: fixed;/* fixed is default */
+    position: fixed;
+    /* fixed is default */
     width: 100%;
     z-index: 1;
-    
+
 }
 
 
@@ -28,26 +30,26 @@
 ::-webkit-scrollbar {
     width: 10px;
     height: 3px;
-    }
-    
-    ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     border: 1px solid greenyellow;
     border-radius: 0px;
     background: black;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-    background: greenyellow;  
+}
+
+::-webkit-scrollbar-thumb {
+    background: greenyellow;
     border-radius: 0px;
-    }
-    
+}
+
 
 
 
 
 /* สิ่งที่จะอยู่ในนั้น */
 
-.title-item{
+.title-item {
     border-style: solid;
     border-radius: 10px;
     border-color: greenyellow;
@@ -59,10 +61,12 @@
     font: bold;
     text-align: center;
     width: auto;
-}/* เขียนเองโดยสปา spgt sitthipong ซื้องาน NFT ด้วย
+}
+
+/* เขียนเองโดยสปา spgt sitthipong ซื้องาน NFT ด้วย
  idea-pool ใน opensea ขายของซะเลย */
 
-.title-item:hover{
+.title-item:hover {
     border-style: solid;
     border-radius: 10px;
     border-color: rgb(219, 255, 164);
@@ -79,7 +83,7 @@
     transform: scaleX(1.2)
 }
 
-.title-item:active{
+.title-item:active {
     border-style: solid;
     border-radius: 10px;
     border-color: rgb(0, 255, 0);
@@ -97,30 +101,32 @@
 }
 
 @keyframes width-animation {
-    0%{
+    0% {
         transform: scaleX(1);
     }
-    100%{
+
+    100% {
         transform: scaleX(1.2);
     }
-    
+
 }
 
 @keyframes down-size {
-    0%{
+    0% {
         transform: scale(1);
     }
-    100%{
+
+    100% {
         transform: scale(0.8);
     }
 }
 
-.all-top{
+.all-top {
     height: 100px;
 }
 
 
-.grid-center{
+.grid-center {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -128,11 +134,13 @@
     display: grid;
     grid-template-columns: auto 61.805% auto;
     column-gap: 0px;
-    row-gap: 50px;/* ระยะห่างระหว่างกล่องข้อมูล */
+    row-gap: 50px;
+    /* ระยะห่างระหว่างกล่องข้อมูล */
     text-align: center;
 }
-.grid-center-item{
-    border: solid greenyellow ;
+
+.grid-center-item {
+    border: solid greenyellow;
     border-width: 0px 2px 2px 0px;
     box-sizing: border-box;
     margin: 0px;
@@ -147,7 +155,9 @@
     text-align: center;
     text-align: justify;
 }
-.grid-center-item:hover{
+
+
+.grid-center-item:hover {
     box-sizing: border-box;
     margin: 0px;
     padding: 20px;
@@ -155,7 +165,7 @@
     grid-column-end: 3;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    
+
 
     /* animation */
     animation-name: center-up;
@@ -163,7 +173,8 @@
     background-color: rgba(0, 0, 0, 0.8);
     transform: scaleX(1.1);
 }
-.grid-center-item:active{
+
+.grid-center-item:active {
     box-sizing: border-box;
     margin: 0px;
     padding: 20px;
@@ -171,7 +182,7 @@
     grid-column-end: 3;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    
+
 
     /* animation */
     animation-name: center-up;
@@ -179,28 +190,115 @@
     background-color: rgba(0, 0, 0, 0.8);
     transform: scaleX(1.1);
 }
+
 /* animation ที่เอาเม้ามาชี้หรือกดที่ไอเทมข้อมูลหลัก ขนาดจะใหญ่ขึ้น */
 @keyframes center-up {
-    0%{
+    0% {
         transform: scaleX(1);
         background-color: rgba(0, 0, 0, 0.5);
     }
-    100%{
+
+    100% {
         transform: scaleX(1.1);
         background-color: rgba(0, 0, 0, 0.8);
     }
 }
+
 /* query ในมืถือที่ขนาดความกว้างน้อยกว่า 500px อิงตามขนาด oppo A92 ที่ผมใช้ */
 @media only screen and (max-width: 500px) {
-    
-    .title-item{
+
+    .title-item {
         font-size: 8px;
     }
 
-    .grid-center-item{
+    .grid-center-item {
         font-size: 10px;
     }
-    .grid-center{
+
+    .grid-center {
         row-gap: 10px;
+    }
+}
+
+.marker {
+    color: black;
+    background: linear-gradient(124deg, #ff220080, #e81d1d80, #e8b780, #e3e81d80, #1de84080, #1ddde880, #2b1de880, #dd00f380, #dd00f380);
+    background-size: 1800% 1800%;
+
+    -webkit-animation: rainbow 20s linear infinite;
+    -z-animation: rainbow 20s linear infinite;
+    -o-animation: rainbow 20s linear infinite;
+    animation: rainbow 20s linear infinite;
+}
+.marker:hover{
+    
+
+    -webkit-animation: rainbow 10s linear infinite;
+    -z-animation: rainbow 10s linear infinite;
+    -o-animation: rainbow 10s linear infinite;
+    animation: rainbow 10s linear infinite;
+}
+.marker:active{
+    
+
+    -webkit-animation: rainbow 10s linear infinite;
+    -z-animation: rainbow 10s linear infinite;
+    -o-animation: rainbow 10s linear infinite;
+    animation: rainbow 10s linear infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-moz-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-o-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
     }
 }
